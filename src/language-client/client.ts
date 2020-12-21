@@ -4,7 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 /* eslint-disable */
 import path from 'path'
-import { ApplyWorkspaceEditParams, CompletionItemTag, ApplyWorkspaceEditRequest, ApplyWorkspaceEditResponse, CancellationToken, ClientCapabilities, CodeAction, CodeActionContext, CodeActionKind, CodeActionOptions, CodeActionParams, CodeActionRegistrationOptions, CodeActionRequest, CodeLens, CodeLensOptions, CodeLensRegistrationOptions, CodeLensRequest, CodeLensResolveRequest, Command, CompletionContext, CompletionItem, CompletionItemKind, CompletionList, CompletionOptions, CompletionRegistrationOptions, CompletionRequest, CompletionResolveRequest, createProtocolConnection, DeclarationRequest, Definition, DefinitionOptions, DefinitionRegistrationOptions, DefinitionRequest, Diagnostic, DiagnosticSeverity, DiagnosticTag, DidChangeConfigurationNotification, DidChangeConfigurationParams, DidChangeConfigurationRegistrationOptions, DidChangeTextDocumentNotification, DidChangeTextDocumentParams, DidChangeWatchedFilesNotification, DidChangeWatchedFilesParams, DidChangeWatchedFilesRegistrationOptions, DidCloseTextDocumentNotification, DidCloseTextDocumentParams, DidOpenTextDocumentNotification, DidOpenTextDocumentParams, DidSaveTextDocumentNotification, DidSaveTextDocumentParams, Disposable, DocumentColorRequest, DocumentFormattingOptions, DocumentFormattingParams, DocumentFormattingRequest, DocumentHighlight, DocumentHighlightOptions, DocumentHighlightRegistrationOptions, DocumentHighlightRequest, DocumentLink, DocumentLinkOptions, DocumentLinkRegistrationOptions, DocumentLinkRequest, DocumentLinkResolveRequest, DocumentOnTypeFormattingOptions, DocumentOnTypeFormattingParams, DocumentOnTypeFormattingRegistrationOptions, DocumentOnTypeFormattingRequest, DocumentRangeFormattingOptions, DocumentRangeFormattingParams, DocumentRangeFormattingRegistrationOptions, DocumentRangeFormattingRequest, DocumentSelector, DocumentSymbol, DocumentSymbolOptions, DocumentSymbolRegistrationOptions, DocumentSymbolRequest, Emitter, ErrorCodes, Event, ExecuteCommandParams, ExecuteCommandRegistrationOptions, ExecuteCommandRequest, ExitNotification, FailureHandlingKind, FileChangeType, FileEvent, FoldingRangeRequest, FormattingOptions, GenericNotificationHandler, GenericRequestHandler, Hover, HoverOptions, HoverRegistrationOptions, HoverRequest, ImplementationRequest, InitializedNotification, InitializeError, InitializeParams, InitializeRequest, InitializeResult, Location, Logger, LogMessageNotification, LogMessageParams, MarkupKind, Message, MessageReader, MessageType, MessageWriter, NotificationHandler, NotificationHandler0, NotificationType, NotificationType0, Position, PrepareRenameRequest, ProgressToken, ProgressType, Proposed, PublishDiagnosticsNotification, PublishDiagnosticsParams, Range, ReferenceOptions, ReferenceRegistrationOptions, ReferencesRequest, RegistrationParams, RegistrationRequest, RenameOptions, RenameParams, RenameRegistrationOptions, RenameRequest, RequestHandler, RequestHandler0, RequestType, RequestType0, ResourceOperationKind, ResponseError, RPCMessageType, SelectionRangeRequest, ServerCapabilities, ShowMessageNotification, ShowMessageParams, ShowMessageRequest, ShutdownRequest, SignatureHelp, SignatureHelpOptions, SignatureHelpRegistrationOptions, SignatureHelpRequest, StaticRegistrationOptions, SymbolInformation, SymbolKind, SymbolTag, TelemetryEventNotification, TextDocumentChangeRegistrationOptions, TextDocumentEdit, TextDocumentPositionParams, TextDocumentRegistrationOptions, TextDocumentSaveRegistrationOptions, TextDocumentSyncKind, TextDocumentSyncOptions, TextEdit, Trace, TraceFormat, TraceOptions, Tracer, TypeDefinitionRequest, UnregistrationParams, UnregistrationRequest, WatchKind, WillSaveTextDocumentNotification, WillSaveTextDocumentParams, WillSaveTextDocumentWaitUntilRequest, WorkDoneProgressOptions, WorkspaceEdit, WorkspaceFolder, WorkspaceSymbolRegistrationOptions, WorkspaceSymbolRequest, SignatureHelpContext, WorkDoneProgressBegin, WorkDoneProgressEnd, WorkDoneProgressReport, WorkDoneProgress, DefinitionLink } from 'vscode-languageserver-protocol'
+import { ApplyWorkspaceEditParams, CompletionItemTag, ApplyWorkspaceEditRequest, ApplyWorkspaceEditResponse, CancellationToken, ClientCapabilities, CodeAction, CodeActionContext, CodeActionKind, CodeActionOptions, CodeActionParams, CodeActionRegistrationOptions, CodeActionRequest, CodeLens, CodeLensOptions, CodeLensRegistrationOptions, CodeLensRequest, CodeLensResolveRequest, Command, CompletionContext, CompletionItem, CompletionItemKind, CompletionList, CompletionOptions, CompletionRegistrationOptions, CompletionRequest, CompletionResolveRequest, createProtocolConnection, DeclarationRequest, Definition, DefinitionOptions, DefinitionRegistrationOptions, DefinitionRequest, Diagnostic, DiagnosticSeverity, DiagnosticTag, DidChangeConfigurationNotification, DidChangeConfigurationParams, DidChangeConfigurationRegistrationOptions, DidChangeTextDocumentNotification, DidChangeTextDocumentParams, DidChangeWatchedFilesNotification, DidChangeWatchedFilesParams, DidChangeWatchedFilesRegistrationOptions, DidCloseTextDocumentNotification, DidCloseTextDocumentParams, DidOpenTextDocumentNotification, DidOpenTextDocumentParams, DidSaveTextDocumentNotification, DidSaveTextDocumentParams, Disposable, DocumentColorRequest, DocumentFormattingOptions, DocumentFormattingParams, DocumentFormattingRequest, DocumentHighlight, DocumentHighlightOptions, DocumentHighlightRegistrationOptions, DocumentHighlightRequest, DocumentLink, DocumentLinkOptions, DocumentLinkRegistrationOptions, DocumentLinkRequest, DocumentLinkResolveRequest, DocumentOnTypeFormattingOptions, DocumentOnTypeFormattingParams, DocumentOnTypeFormattingRegistrationOptions, DocumentOnTypeFormattingRequest, DocumentRangeFormattingOptions, DocumentRangeFormattingParams, DocumentRangeFormattingRegistrationOptions, DocumentRangeFormattingRequest, DocumentSelector, DocumentSymbol, DocumentSymbolOptions, DocumentSymbolRegistrationOptions, DocumentSymbolRequest, Emitter, Event, ExecuteCommandParams, ExecuteCommandRegistrationOptions, ExecuteCommandRequest, ExitNotification, FailureHandlingKind, FileChangeType, FileEvent, FoldingRangeRequest, FormattingOptions, GenericNotificationHandler, GenericRequestHandler, Hover, HoverOptions, HoverRegistrationOptions, HoverRequest, ImplementationRequest, InitializedNotification, InitializeError, InitializeParams, InitializeRequest, InitializeResult, Location, Logger, LogMessageNotification, LogMessageParams, MarkupKind, Message, MessageReader, MessageType, MessageWriter, NotificationHandler, NotificationHandler0, NotificationType, NotificationType0, Position, PrepareRenameRequest, ProgressToken, ProgressType, PublishDiagnosticsNotification, PublishDiagnosticsParams, Range, ReferenceOptions, ReferenceRegistrationOptions, ReferencesRequest, RegistrationParams, RegistrationRequest, RenameOptions, RenameParams, RenameRegistrationOptions, RenameRequest, RequestHandler, RequestHandler0, RequestType, RequestType0, ResourceOperationKind, ResponseError, SelectionRangeRequest, ServerCapabilities, ShowMessageNotification, ShowMessageParams, ShowMessageRequest, ShutdownRequest, SignatureHelp, SignatureHelpOptions, SignatureHelpRegistrationOptions, SignatureHelpRequest, StaticRegistrationOptions, SymbolInformation, SymbolKind, SymbolTag, TelemetryEventNotification, TextDocumentChangeRegistrationOptions, TextDocumentEdit, TextDocumentPositionParams, TextDocumentRegistrationOptions, TextDocumentSaveRegistrationOptions, TextDocumentSyncKind, TextDocumentSyncOptions, TextEdit, Trace, TraceFormat, TraceOptions, Tracer, TypeDefinitionRequest, UnregistrationParams, UnregistrationRequest, WatchKind, WillSaveTextDocumentNotification, WillSaveTextDocumentParams, WillSaveTextDocumentWaitUntilRequest, WorkDoneProgressOptions, WorkspaceEdit, WorkspaceFolder, WorkspaceSymbolRegistrationOptions, WorkspaceSymbolRequest, SignatureHelpContext, WorkDoneProgressBegin, WorkDoneProgressEnd, WorkDoneProgressReport, WorkDoneProgress, DefinitionLink, ProtocolRequestType0, ProtocolRequestType, MessageSignature, ProtocolNotificationType0, ProtocolNotificationType, RegistrationType, LSPErrorCodes, SaveOptions } from 'vscode-languageserver-protocol'
+import { TextDocument } from "vscode-languageserver-textdocument"
 import { URI } from 'vscode-uri'
 import commands from '../commands'
 import languages from '../languages'
@@ -12,7 +13,6 @@ import FileWatcher from '../model/fileSystemWatcher'
 import { CodeActionProvider, CodeLensProvider, CompletionItemProvider, DeclarationProvider, DefinitionProvider, DocumentColorProvider, DocumentFormattingEditProvider, DocumentHighlightProvider, DocumentLinkProvider, DocumentRangeFormattingEditProvider, DocumentSymbolProvider, FoldingRangeProvider, HoverProvider, ImplementationProvider, OnTypeFormattingEditProvider, ProviderResult, ReferenceProvider, RenameProvider, SelectionRangeProvider, SignatureHelpProvider, TypeDefinitionProvider, WorkspaceSymbolProvider } from '../provider'
 import { DiagnosticCollection, MessageItem, OutputChannel, TextDocumentWillSaveEvent, Thenable } from '../types'
 import { resolveRoot } from '../util/fs'
-import { TextDocument } from 'vscode-languageserver-textdocument'
 import * as Is from '../util/is'
 import { omit } from '../util/lodash'
 import window from '../window'
@@ -36,56 +36,35 @@ const logger = require('../util/logger')('language-client-client')
 interface IConnection {
   listen(): void
 
-  sendRequest<R, E, RO>(
-    type: RequestType0<R, E, RO>,
-    token?: CancellationToken
-  ): Promise<R>
-  sendRequest<P, R, E, RO>(
-    type: RequestType<P, R, E, RO>,
-    params: P,
-    token?: CancellationToken
-  ): Promise<R>
+  sendRequest<R, PR, E, RO>(type: ProtocolRequestType0<R, PR, E, RO>, token?: CancellationToken): Promise<R>
+  sendRequest<P, R, PR, E, RO>(type: ProtocolRequestType<P, R, PR, E, RO>, params: P, token?: CancellationToken): Promise<R>
+  sendRequest<R, E>(type: RequestType0<R, E>, token?: CancellationToken): Promise<R>
+  sendRequest<P, R, E>(type: RequestType<P, R, E>, params: P, token?: CancellationToken): Promise<R>
   sendRequest<R>(method: string, token?: CancellationToken): Promise<R>
-  sendRequest<R>(
-    method: string,
-    param: any,
-    token?: CancellationToken
-  ): Promise<R>
-  sendRequest<R>(type: string | RPCMessageType, ...params: any[]): Promise<R>
+  sendRequest<R>(method: string, param: any, token?: CancellationToken): Promise<R>
+  sendRequest<R>(type: string | MessageSignature, ...params: any[]): Promise<R>
 
-  onRequest<R, E, RO>(
-    type: RequestType0<R, E, RO>,
-    handler: RequestHandler0<R, E>
-  ): void
-  onRequest<P, R, E, RO>(
-    type: RequestType<P, R, E, RO>,
-    handler: RequestHandler<P, R, E>
-  ): void
-  onRequest<R, E>(method: string, handler: GenericRequestHandler<R, E>): void
-  onRequest<R, E>(
-    method: string | RPCMessageType,
-    handler: GenericRequestHandler<R, E>
-  ): void
+  onRequest<R, PR, E, RO>(type: ProtocolRequestType0<R, PR, E, RO>, handler: RequestHandler0<R, E>): Disposable
+  onRequest<P, R, PR, E, RO>(type: ProtocolRequestType<P, R, PR, E, RO>, handler: RequestHandler<P, R, E>): Disposable
+  onRequest<R, E>(type: RequestType0<R, E>, handler: RequestHandler0<R, E>): Disposable
+  onRequest<P, R, E>(type: RequestType<P, R, E>, handler: RequestHandler<P, R, E>): Disposable
+  onRequest<R, E>(method: string, handler: GenericRequestHandler<R, E>): Disposable
+  onRequest<R, E>(method: string | MessageSignature, handler: GenericRequestHandler<R, E>): Disposable
 
-  sendNotification<RO>(type: NotificationType0<RO>): void
-  sendNotification<P, RO>(type: NotificationType<P, RO>, params?: P): void
+  sendNotification<RO>(type: ProtocolNotificationType0<RO>): void
+  sendNotification<P, RO>(type: ProtocolNotificationType<P, RO>, params?: P): void
+  sendNotification(type: NotificationType0): void
+  sendNotification<P>(type: NotificationType<P>, params?: P): void
   sendNotification(method: string): void
   sendNotification(method: string, params: any): void
-  sendNotification(method: string | RPCMessageType, params?: any): void
+  sendNotification(method: string | MessageSignature, params?: any): void
 
-  onNotification<RO>(
-    type: NotificationType0<RO>,
-    handler: NotificationHandler0
-  ): void
-  onNotification<P, RO>(
-    type: NotificationType<P, RO>,
-    handler: NotificationHandler<P>
-  ): void
-  onNotification(method: string, handler: GenericNotificationHandler): void
-  onNotification(
-    method: string | RPCMessageType,
-    handler: GenericNotificationHandler
-  ): void
+  onNotification<RO>(type: ProtocolNotificationType0<RO>, handler: NotificationHandler0): Disposable
+  onNotification<P, RO>(type: ProtocolNotificationType<P, RO>, handler: NotificationHandler<P>): Disposable
+  onNotification(type: NotificationType0, handler: NotificationHandler0): Disposable
+  onNotification<P>(type: NotificationType<P>, handler: NotificationHandler<P>): Disposable
+  onNotification(method: string, handler: GenericNotificationHandler): Disposable
+  onNotification(method: string | MessageSignature, handler: GenericNotificationHandler): Disposable
 
   onProgress<P>(type: ProgressType<P>, token: string | number, handler: NotificationHandler<P>): Disposable
   sendProgress<P>(type: ProgressType<P>, token: string | number, value: P): void
@@ -173,14 +152,12 @@ function createConnection(
   let result: IConnection = {
     listen: (): void => connection.listen(),
 
-    sendRequest: <R>(type: string | RPCMessageType, ...params: any[]): Promise<R> =>
-      connection.sendRequest(Is.string(type) ? type : type.method, ...params),
-    onRequest: <R, E>(type: string | RPCMessageType, handler: GenericRequestHandler<R, E>): void =>
-      connection.onRequest(Is.string(type) ? type : type.method, handler),
-    sendNotification: (type: string | RPCMessageType, params?: any): void =>
-      connection.sendNotification(Is.string(type) ? type : type.method, params),
-    onNotification: (type: string | RPCMessageType, handler: GenericNotificationHandler): void =>
-      connection.onNotification(Is.string(type) ? type : type.method, handler),
+    sendRequest: <R>(type: string | MessageSignature, ...params: any[]): Promise<R> => connection.sendRequest(Is.string(type) ? type : type.method, ...params),
+    onRequest: <R, E>(type: string | MessageSignature, handler: GenericRequestHandler<R, E>): Disposable => connection.onRequest(Is.string(type) ? type : type.method, handler),
+
+    sendNotification: (type: string | MessageSignature, params?: any): void => connection.sendNotification(Is.string(type) ? type : type.method, params),
+    onNotification: (type: string | MessageSignature, handler: GenericNotificationHandler): Disposable => connection.onNotification(Is.string(type) ? type : type.method, handler),
+
     onProgress: connection.onProgress,
     sendProgress: connection.sendProgress,
 
@@ -892,11 +869,7 @@ export interface StaticFeature {
   dispose(): void
 }
 
-export interface DynamicFeature<T> {
-  /**
-   * The message for which this features support dynamic activation / registration.
-   */
-  messages: RPCMessageType | RPCMessageType[]
+export interface DynamicFeature<RO> {
 
   /**
    * Called to fill the initialize params.
@@ -928,12 +901,17 @@ export interface DynamicFeature<T> {
   ): void
 
   /**
+   * The signature (e.g. method) for which this features support dynamic activation / registration.
+   */
+  registrationType: RegistrationType<RO>
+
+  /**
    * Is called when the server send a register request for the given message.
    *
    * @param message the message to register for.
    * @param data additional registration data as defined in the protocol.
    */
-  register(message: RPCMessageType, data: RegistrationData<T>): void
+  register(data: RegistrationData<RO>): void
 
   /**
    * Is called when the server wants to unregister a feature.
@@ -964,7 +942,7 @@ namespace DynamicFeature {
       Is.func(candidate.register) &&
       Is.func(candidate.unregister) &&
       Is.func(candidate.dispose) &&
-      candidate.messages !== void 0
+      candidate.registrationType !== undefined
     )
   }
 }
@@ -993,7 +971,7 @@ abstract class DocumentNotifiactions<P, E>
   constructor(
     protected _client: BaseLanguageClient,
     private _event: Event<E>,
-    protected _type: NotificationType<P, TextDocumentRegistrationOptions>,
+    protected _type: ProtocolNotificationType<P, TextDocumentRegistrationOptions>,
     protected _middleware: NextSignature<E, void> | undefined,
     protected _createParams: CreateParamsSignature<E, P>,
     protected _selectorFilter?: (
@@ -1002,7 +980,7 @@ abstract class DocumentNotifiactions<P, E>
     ) => boolean
   ) {}
 
-  public abstract messages: RPCMessageType | RPCMessageType[]
+  public abstract registrationType: RegistrationType<TextDocumentRegistrationOptions>
 
   public abstract fillClientCapabilities(capabilities: ClientCapabilities): void
 
@@ -1012,7 +990,6 @@ abstract class DocumentNotifiactions<P, E>
   ): void
 
   public register(
-    _message: RPCMessageType,
     data: RegistrationData<TextDocumentRegistrationOptions>
   ): void {
     if (!data.registerOptions.documentSelector) {
@@ -1086,7 +1063,7 @@ class DidOpenTextDocumentFeature extends DocumentNotifiactions<DidOpenTextDocume
     )
   }
 
-  public get messages(): typeof DidOpenTextDocumentNotification.type {
+  public get registrationType(): RegistrationType<TextDocumentRegistrationOptions> {
     return DidOpenTextDocumentNotification.type
   }
 
@@ -1104,7 +1081,7 @@ class DidOpenTextDocumentFeature extends DocumentNotifiactions<DidOpenTextDocume
       textDocumentSyncOptions &&
       textDocumentSyncOptions.openClose
     ) {
-      this.register(this.messages, {
+      this.register({
         id: UUID.generateUuid(),
         registerOptions: { documentSelector: documentSelector }
       })
@@ -1112,10 +1089,9 @@ class DidOpenTextDocumentFeature extends DocumentNotifiactions<DidOpenTextDocume
   }
 
   public register(
-    message: RPCMessageType,
     data: RegistrationData<TextDocumentRegistrationOptions>
   ): void {
-    super.register(message, data)
+    super.register(data)
     if (!data.registerOptions.documentSelector) {
       return
     }
@@ -1167,7 +1143,7 @@ class DidCloseTextDocumentFeature extends DocumentNotifiactions<
     )
   }
 
-  public get messages(): typeof DidCloseTextDocumentNotification.type {
+  public get registrationType(): RegistrationType<TextDocumentRegistrationOptions> {
     return DidCloseTextDocumentNotification.type
   }
 
@@ -1185,7 +1161,7 @@ class DidCloseTextDocumentFeature extends DocumentNotifiactions<
       textDocumentSyncOptions &&
       textDocumentSyncOptions.openClose
     ) {
-      this.register(this.messages, {
+      this.register({
         id: UUID.generateUuid(),
         registerOptions: { documentSelector: documentSelector }
       })
@@ -1238,7 +1214,7 @@ class DidChangeTextDocumentFeature
 
   constructor(private _client: BaseLanguageClient) {}
 
-  public get messages(): typeof DidChangeTextDocumentNotification.type {
+  public get registrationType(): RegistrationType<TextDocumentChangeRegistrationOptions> {
     return DidChangeTextDocumentNotification.type
   }
 
@@ -1254,7 +1230,7 @@ class DidChangeTextDocumentFeature
       textDocumentSyncOptions.change !== void 0 &&
       textDocumentSyncOptions.change !== TextDocumentSyncKind.None
     ) {
-      this.register(this.messages, {
+      this.register({
         id: UUID.generateUuid(),
         registerOptions: Object.assign(
           {},
@@ -1266,7 +1242,6 @@ class DidChangeTextDocumentFeature
   }
 
   public register(
-    _message: RPCMessageType,
     data: RegistrationData<TextDocumentChangeRegistrationOptions>
   ): void {
     if (!data.registerOptions.documentSelector) {
@@ -1368,7 +1343,7 @@ class WillSaveFeature extends DocumentNotifiactions<WillSaveTextDocumentParams, 
     )
   }
 
-  public get messages(): RPCMessageType {
+  public get registrationType(): RegistrationType<TextDocumentRegistrationOptions> {
     return WillSaveTextDocumentNotification.type
   }
 
@@ -1387,7 +1362,7 @@ class WillSaveFeature extends DocumentNotifiactions<WillSaveTextDocumentParams, 
       textDocumentSyncOptions &&
       textDocumentSyncOptions.willSave
     ) {
-      this.register(this.messages, {
+      this.register({
         id: UUID.generateUuid(),
         registerOptions: { documentSelector: documentSelector }
       })
@@ -1401,7 +1376,7 @@ class WillSaveWaitUntilFeature implements DynamicFeature<TextDocumentRegistratio
 
   constructor(private _client: BaseLanguageClient) {}
 
-  public get messages(): RPCMessageType {
+  public get registrationType(): RegistrationType<TextDocumentRegistrationOptions> {
     return WillSaveTextDocumentWaitUntilRequest.type
   }
 
@@ -1420,7 +1395,7 @@ class WillSaveWaitUntilFeature implements DynamicFeature<TextDocumentRegistratio
       textDocumentSyncOptions &&
       textDocumentSyncOptions.willSaveWaitUntil
     ) {
-      this.register(this.messages, {
+      this.register({
         id: UUID.generateUuid(),
         registerOptions: { documentSelector: documentSelector }
       })
@@ -1428,7 +1403,6 @@ class WillSaveWaitUntilFeature implements DynamicFeature<TextDocumentRegistratio
   }
 
   public register(
-    _message: RPCMessageType,
     data: RegistrationData<TextDocumentRegistrationOptions>
   ): void {
     if (!data.registerOptions.documentSelector) {
@@ -1505,7 +1479,7 @@ class DidSaveTextDocumentFeature extends DocumentNotifiactions<
     )
   }
 
-  public get messages(): RPCMessageType {
+  public get registrationType(): RegistrationType<TextDocumentSaveRegistrationOptions> {
     return DidSaveTextDocumentNotification.type
   }
 
@@ -1526,23 +1500,25 @@ class DidSaveTextDocumentFeature extends DocumentNotifiactions<
       textDocumentSyncOptions &&
       textDocumentSyncOptions.save
     ) {
-      this.register(this.messages, {
+      const saveOptions: SaveOptions = typeof textDocumentSyncOptions.save === 'boolean'
+        ? { includeText: false }
+        : { includeText: !!textDocumentSyncOptions.save.includeText }
+      this.register({
         id: UUID.generateUuid(),
         registerOptions: Object.assign(
           {},
           { documentSelector: documentSelector },
-          { includeText: !!textDocumentSyncOptions.save.includeText }
+          saveOptions
         )
       })
     }
   }
 
   public register(
-    method: RPCMessageType,
     data: RegistrationData<TextDocumentSaveRegistrationOptions>
   ): void {
     this._includeText = !!data.registerOptions.includeText
-    super.register(method, data)
+    super.register(data)
   }
 }
 
@@ -1555,7 +1531,7 @@ class FileSystemWatcherFeature
     private _notifyFileEvent: (event: FileEvent) => void
   ) {}
 
-  public get messages(): RPCMessageType {
+  public get registrationType(): RegistrationType<DidChangeWatchedFilesRegistrationOptions> {
     return DidChangeWatchedFilesNotification.type
   }
 
@@ -1572,7 +1548,6 @@ class FileSystemWatcherFeature
   ): void {}
 
   public register(
-    _method: RPCMessageType,
     data: RegistrationData<DidChangeWatchedFilesRegistrationOptions>
   ): void {
     if (!Array.isArray(data.registerOptions.watchers)) {
@@ -1699,11 +1674,11 @@ export abstract class TextDocumentFeature<
 
   constructor(
     protected _client: BaseLanguageClient,
-    private _message: RPCMessageType
+    private _registrationType: RegistrationType<RO>
   ) {}
 
-  public get messages(): RPCMessageType {
-    return this._message
+  public get registrationType(): RegistrationType<RO> {
+    return this._registrationType
   }
 
   public abstract fillClientCapabilities(capabilities: ClientCapabilities): void
@@ -1713,13 +1688,7 @@ export abstract class TextDocumentFeature<
     documentSelector: DocumentSelector
   ): void
 
-  public register(message: RPCMessageType, data: RegistrationData<RO>): void {
-    if (message.method !== this.messages.method) {
-      throw new Error(
-        `Register called on wrong feature. Requested ${message.method
-        } but reached feature ${this.messages.method}`
-      )
-    }
+  public register(data: RegistrationData<RO>): void {
     if (!data.registerOptions.documentSelector) {
       return
     }
@@ -1778,22 +1747,35 @@ export abstract class TextDocumentFeature<
     }
     throw new Error(`The feature has no registration for the provided text document ${textDocument.uri.toString()}`)
   }
+
+  protected getAllProviders(): Iterable<PR> {
+    const result: PR[] = []
+    for (const item of this._registrations.values()) {
+      result.push(item.provider)
+    }
+    return result
+  }
 }
 
 export interface WorkspaceProviderFeature<PR> {
   getProviders(): PR[]
 }
 
+interface WorkspaceFeatureRegistration<PR> {
+  disposable: Disposable;
+  provider: PR;
+}
+
 abstract class WorkspaceFeature<RO, PR> implements DynamicFeature<RO> {
-  protected _registrations: Map<string, Disposable> = new Map()
+  protected _registrations: Map<string, WorkspaceFeatureRegistration<PR>> = new Map()
 
   constructor(
     protected _client: BaseLanguageClient,
-    private _message: RPCMessageType
+    private _registrationType: RegistrationType<RO>
   ) {}
 
-  public get messages(): RPCMessageType {
-    return this._message
+  public get registrationType(): RegistrationType<RO> {
+    return this._registrationType
   }
 
   public abstract fillClientCapabilities(capabilities: ClientCapabilities): void
@@ -1803,26 +1785,31 @@ abstract class WorkspaceFeature<RO, PR> implements DynamicFeature<RO> {
     documentSelector: DocumentSelector | undefined
   ): void
 
-  public register(message: RPCMessageType, data: RegistrationData<RO>): void {
-    if (message.method !== this.messages.method) {
-      throw new Error(`Register called on wrong feature. Requested ${message.method} but reached feature ${this.messages.method}`)
-    }
+  public register(data: RegistrationData<RO>): void {
     const registration = this.registerLanguageProvider(data.registerOptions)
-    this._registrations.set(data.id, registration)
+    this._registrations.set(data.id, { disposable: registration[0], provider: registration[1] })
   }
 
   protected abstract registerLanguageProvider(options: RO): Disposable
 
   public unregister(id: string): void {
     const registration = this._registrations.get(id)
-    if (registration) registration.dispose()
+    if (registration) registration.disposable.dispose()
   }
 
   public dispose(): void {
     this._registrations.forEach(value => {
-      value.dispose()
+      value.disposable.dispose()
     })
     this._registrations.clear()
+  }
+
+  public getProviders(): PR[] {
+    const result: PR[] = []
+    for (const registration of this._registrations.values()) {
+      result.push(registration.provider)
+    }
+    return result
   }
 }
 
@@ -1862,7 +1849,7 @@ class CompletionItemFeature extends TextDocumentFeature<CompletionOptions, Compl
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -1952,7 +1939,7 @@ class HoverFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2014,7 +2001,7 @@ class SignatureHelpFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2072,7 +2059,7 @@ class DefinitionFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2127,7 +2114,7 @@ class ReferencesFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2181,7 +2168,7 @@ class DocumentHighlightFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2240,7 +2227,7 @@ class DocumentSymbolFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2315,7 +2302,7 @@ class WorkspaceSymbolFeature extends WorkspaceFeature<WorkspaceSymbolRegistratio
     if (!capabilities.workspaceSymbolProvider) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: capabilities.workspaceSymbolProvider === true ? { workDoneProgress: false } : capabilities.workspaceSymbolProvider
     })
@@ -2377,7 +2364,7 @@ class CodeActionFeature extends TextDocumentFeature<boolean | CodeActionOptions,
       return
     }
 
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2441,7 +2428,7 @@ class CodeLensFeature extends TextDocumentFeature<CodeLensOptions, CodeLensRegis
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2516,7 +2503,7 @@ class DocumentFormattingFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2574,7 +2561,7 @@ class DocumentRangeFormattingFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2625,7 +2612,7 @@ class DocumentOnTypeFormattingFeature extends TextDocumentFeature<
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2660,6 +2647,10 @@ class DocumentOnTypeFormattingFeature extends TextDocumentFeature<
   }
 }
 
+interface DefaultBehavior {
+  defaultBehavior: boolean
+}
+
 class RenameFeature extends TextDocumentFeature<boolean | RenameOptions, RenameRegistrationOptions, RenameProvider> {
   constructor(client: BaseLanguageClient) {
     super(client, RenameRequest.type)
@@ -2682,7 +2673,7 @@ class RenameFeature extends TextDocumentFeature<boolean | RenameOptions, RenameR
     if (Is.boolean(capabilities.renameProvider)) {
       options.prepareProvider = false
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2720,6 +2711,8 @@ class RenameFeature extends TextDocumentFeature<boolean | RenameOptions, RenameR
               (result) => {
                 if (Range.is(result)) {
                   return result
+                } else if (this.isDefaultBehavior(result)) {
+                  return result.defaultBehavior === true ? null : Promise.reject(new Error(`The element can't be renamed.`))
                 } else if (result && Range.is(result.range)) {
                   return {
                     range: result.range,
@@ -2745,6 +2738,11 @@ class RenameFeature extends TextDocumentFeature<boolean | RenameOptions, RenameR
 
     return [languages.registerRenameProvider(options.documentSelector, provider), provider]
   }
+
+  private isDefaultBehavior(value: any): value is DefaultBehavior {
+    const candidate: DefaultBehavior = value
+    return candidate && Is.boolean(candidate.defaultBehavior)
+  }
 }
 
 class DocumentLinkFeature extends TextDocumentFeature<DocumentLinkOptions, DocumentLinkRegistrationOptions, DocumentLinkProvider> {
@@ -2767,7 +2765,7 @@ class DocumentLinkFeature extends TextDocumentFeature<DocumentLinkOptions, Docum
     if (!options) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: options
     })
@@ -2822,7 +2820,7 @@ class ConfigurationFeature implements DynamicFeature<DidChangeConfigurationRegis
 
   constructor(private _client: BaseLanguageClient) {}
 
-  public get messages(): RPCMessageType {
+  public get registrationType(): RegistrationType<DidChangeConfigurationRegistrationOptions> {
     return DidChangeConfigurationNotification.type
   }
 
@@ -2833,7 +2831,7 @@ class ConfigurationFeature implements DynamicFeature<DidChangeConfigurationRegis
   public initialize(): void {
     let section = this._client.clientOptions.synchronize?.configurationSection
     if (section !== void 0) {
-      this.register(this.messages, {
+      this.register({
         id: UUID.generateUuid(),
         registerOptions: {
           section: section
@@ -2843,7 +2841,6 @@ class ConfigurationFeature implements DynamicFeature<DidChangeConfigurationRegis
   }
 
   public register(
-    _message: RPCMessageType,
     data: RegistrationData<DidChangeConfigurationRegistrationOptions>
   ): void {
     let { section } = data.registerOptions
@@ -2960,7 +2957,7 @@ class ExecuteCommandFeature
   private _commands: Map<string, Disposable[]> = new Map<string, Disposable[]>()
   constructor(private _client: BaseLanguageClient) {}
 
-  public get messages(): RPCMessageType {
+  public get registrationType(): RegistrationType<ExecuteCommandRegistrationOptions> {
     return ExecuteCommandRequest.type
   }
 
@@ -2975,14 +2972,13 @@ class ExecuteCommandFeature
     if (!capabilities.executeCommandProvider) {
       return
     }
-    this.register(this.messages, {
+    this.register({
       id: UUID.generateUuid(),
       registerOptions: Object.assign({}, capabilities.executeCommandProvider)
     })
   }
 
   public register(
-    _message: RPCMessageType,
     data: RegistrationData<ExecuteCommandRegistrationOptions>
   ): void {
     const client = this._client
@@ -3196,25 +3192,13 @@ export abstract class BaseLanguageClient {
     return this._initializeResult
   }
 
-  public sendRequest<R, E, RO>(
-    type: RequestType0<R, E, RO>,
-    token?: CancellationToken
-  ): Promise<R>
-  public sendRequest<P, R, E, RO>(
-    type: RequestType<P, R, E, RO>,
-    params: P,
-    token?: CancellationToken
-  ): Promise<R>
+  public sendRequest<R, PR, E, RO>(type: ProtocolRequestType0<R, PR, E, RO>, token?: CancellationToken): Promise<R>
+  public sendRequest<P, R, PR, E, RO>(type: ProtocolRequestType<P, R, PR, E, RO>, params: P, token?: CancellationToken): Promise<R>
+  public sendRequest<R, E>(type: RequestType0<R, E>, token?: CancellationToken): Promise<R>
+  public sendRequest<P, R, E>(type: RequestType<P, R, E>, params: P, token?: CancellationToken): Promise<R>
   public sendRequest<R>(method: string, token?: CancellationToken): Promise<R>
-  public sendRequest<R>(
-    method: string,
-    param: any,
-    token?: CancellationToken
-  ): Promise<R>
-  public async sendRequest<R>(
-    type: string | RPCMessageType,
-    ...params: any[]
-  ): Promise<R> {
+  public sendRequest<R>(method: string, param: any, token?: CancellationToken): Promise<R>
+  public async sendRequest<R>(type: string | MessageSignature, ...params: any[]): Promise<R> {
     if (!this.isConnectionActive()) {
       throw new Error('Language client is not ready yet')
     }
@@ -3229,27 +3213,17 @@ export abstract class BaseLanguageClient {
     }
   }
 
-  public onRequest<R, E, RO>(
-    type: RequestType0<R, E, RO>,
-    handler: RequestHandler0<R, E>
-  ): void
-  public onRequest<P, R, E, RO>(
-    type: RequestType<P, R, E, RO>,
-    handler: RequestHandler<P, R, E>
-  ): void
-  public onRequest<R, E>(
-    method: string,
-    handler: GenericRequestHandler<R, E>
-  ): void
-  public onRequest<R, E>(
-    type: string | RPCMessageType,
-    handler: GenericRequestHandler<R, E>
-  ): void {
+  public onRequest<R, PR, E, RO>(type: ProtocolRequestType0<R, PR, E, RO>, handler: RequestHandler0<R, E>): Disposable
+  public onRequest<P, R, PR, E, RO>(type: ProtocolRequestType<P, R, PR, E, RO>, handler: RequestHandler<P, R, E>): Disposable
+  public onRequest<R, E>(type: RequestType0<R, E>, handler: RequestHandler0<R, E>): Disposable
+  public onRequest<P, R, E>(type: RequestType<P, R, E>, handler: RequestHandler<P, R, E>): Disposable
+  public onRequest<R, E>(method: string, handler: GenericRequestHandler<R, E>): Disposable
+  public onRequest<R, E>(type: string | MessageSignature, handler: GenericRequestHandler<R, E>): Disposable {
     if (!this.isConnectionActive()) {
       throw new Error('Language client is not ready yet')
     }
     try {
-      this._resolvedConnection!.onRequest(type, handler)
+      return this._resolvedConnection!.onRequest(type, handler)
     } catch (error) {
       this.error(
         `Registering request handler ${Is.string(type) ? type : type.method
@@ -3260,11 +3234,13 @@ export abstract class BaseLanguageClient {
     }
   }
 
-  public sendNotification<RO>(type: NotificationType0<RO>): void
-  public sendNotification<P, RO>(type: NotificationType<P, RO>, params?: P): void
+  public sendNotification<RO>(type: ProtocolNotificationType0<RO>): void
+  public sendNotification<P, RO>(type: ProtocolNotificationType<P, RO>, params?: P): void
+  public sendNotification(type: NotificationType0): void
+  public sendNotification<P>(type: NotificationType<P>, params?: P): void
   public sendNotification(method: string): void
   public sendNotification(method: string, params: any): void
-  public sendNotification<P>(type: string | RPCMessageType, params?: P): void {
+  public sendNotification<P>(type: string | MessageSignature, params?: P): void {
     if (!this.isConnectionActive()) {
       throw new Error('Language client is not ready yet')
     }
@@ -3279,15 +3255,17 @@ export abstract class BaseLanguageClient {
     }
   }
 
-  public onNotification<RO>(type: NotificationType0<RO>, handler: NotificationHandler0): void
-  public onNotification<P, RO>(type: NotificationType<P, RO>, handler: NotificationHandler<P>): void
-  public onNotification(method: string, handler: GenericNotificationHandler): void
-  public onNotification(type: string | RPCMessageType, handler: GenericNotificationHandler): void {
+  public onNotification<RO>(type: ProtocolNotificationType0<RO>, handler: NotificationHandler0): Disposable
+  public onNotification<P, RO>(type: ProtocolNotificationType<P, RO>, handler: NotificationHandler<P>): Disposable
+  public onNotification(type: NotificationType0, handler: NotificationHandler0): Disposable
+  public onNotification<P>(type: NotificationType<P>, handler: NotificationHandler<P>): Disposable
+  public onNotification(method: string, handler: GenericNotificationHandler): Disposable
+  public onNotification(type: string | MessageSignature, handler: GenericNotificationHandler): Disposable {
     if (!this.isConnectionActive()) {
       throw new Error('Language client is not ready yet')
     }
     try {
-      this._resolvedConnection!.onNotification(type, handler)
+      return this._resolvedConnection!.onNotification(type, handler)
     } catch (error) {
       this.error(
         `Registering notification handler ${Is.string(type) ? type : type.method
@@ -3978,10 +3956,6 @@ export abstract class BaseLanguageClient {
   }
 
   private readonly _features: (StaticFeature | DynamicFeature<any>)[] = []
-  private readonly _method2Message: Map<string, RPCMessageType> = new Map<
-    string,
-    RPCMessageType
-  >()
   private readonly _dynamicFeatures: Map<string, DynamicFeature<any>> = new Map<
     string,
     DynamicFeature<any>
@@ -3998,16 +3972,8 @@ export abstract class BaseLanguageClient {
   public registerFeature(feature: StaticFeature | DynamicFeature<any>): void {
     this._features.push(feature)
     if (DynamicFeature.is(feature)) {
-      let messages = feature.messages
-      if (Array.isArray(messages)) {
-        for (let message of messages) {
-          this._method2Message.set(message.method, message)
-          this._dynamicFeatures.set(message.method, feature)
-        }
-      } else {
-        this._method2Message.set(messages.method, messages)
-        this._dynamicFeatures.set(messages.method, feature)
-      }
+      const registrationType = feature.registrationType
+      this._dynamicFeatures.set(registrationType.method, feature)
     }
   }
 
@@ -4123,7 +4089,12 @@ export abstract class BaseLanguageClient {
           id: registration.id,
           registerOptions: options
         }
-        feature.register(this._method2Message.get(registration.method)!, data)
+        try {
+          feature.register(data)
+        } catch (err) {
+          reject(err)
+          return
+        }
       }
       resolve()
     })
@@ -4177,12 +4148,13 @@ export abstract class BaseLanguageClient {
     })
   }
 
-  public logFailedRequest(type: RPCMessageType, error: any): void {
+  public logFailedRequest(type: MessageSignature, error: any): void {
     // If we get a request cancel don't log anything.
     if (
       error instanceof ResponseError &&
-      error.code === ErrorCodes.RequestCancelled
+      error.code === LSPErrorCodes.RequestCancelled
     ) {
+      // TODO: handle LSPErrorCodes.ContentModified
       return
     }
     this.error(`Request ${type.method} failed.`, error)
