@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 /* eslint-disable */
 import path from 'path'
-import { ApplyWorkspaceEditParams, CompletionItemTag, ApplyWorkspaceEditRequest, ApplyWorkspaceEditResponse, CancellationToken, ClientCapabilities, CodeAction, CodeActionContext, CodeActionKind, CodeActionOptions, CodeActionParams, CodeActionRegistrationOptions, CodeActionRequest, CodeLens, CodeLensOptions, CodeLensRegistrationOptions, CodeLensRequest, CodeLensResolveRequest, Command, CompletionContext, CompletionItem, CompletionItemKind, CompletionList, CompletionOptions, CompletionRegistrationOptions, CompletionRequest, CompletionResolveRequest, createProtocolConnection, DeclarationRequest, Definition, DefinitionOptions, DefinitionRegistrationOptions, DefinitionRequest, Diagnostic, DiagnosticSeverity, DiagnosticTag, DidChangeConfigurationNotification, DidChangeConfigurationParams, DidChangeConfigurationRegistrationOptions, DidChangeTextDocumentNotification, DidChangeTextDocumentParams, DidChangeWatchedFilesNotification, DidChangeWatchedFilesParams, DidChangeWatchedFilesRegistrationOptions, DidCloseTextDocumentNotification, DidCloseTextDocumentParams, DidOpenTextDocumentNotification, DidOpenTextDocumentParams, DidSaveTextDocumentNotification, DidSaveTextDocumentParams, Disposable, DocumentColorRequest, DocumentFormattingOptions, DocumentFormattingParams, DocumentFormattingRequest, DocumentHighlight, DocumentHighlightOptions, DocumentHighlightRegistrationOptions, DocumentHighlightRequest, DocumentLink, DocumentLinkOptions, DocumentLinkRegistrationOptions, DocumentLinkRequest, DocumentLinkResolveRequest, DocumentOnTypeFormattingOptions, DocumentOnTypeFormattingParams, DocumentOnTypeFormattingRegistrationOptions, DocumentOnTypeFormattingRequest, DocumentRangeFormattingOptions, DocumentRangeFormattingParams, DocumentRangeFormattingRegistrationOptions, DocumentRangeFormattingRequest, DocumentSelector, DocumentSymbol, DocumentSymbolOptions, DocumentSymbolRegistrationOptions, DocumentSymbolRequest, Emitter, Event, ExecuteCommandParams, ExecuteCommandRegistrationOptions, ExecuteCommandRequest, ExitNotification, FailureHandlingKind, FileChangeType, FileEvent, FoldingRangeRequest, FormattingOptions, GenericNotificationHandler, GenericRequestHandler, Hover, HoverOptions, HoverRegistrationOptions, HoverRequest, ImplementationRequest, InitializedNotification, InitializeError, InitializeParams, InitializeRequest, InitializeResult, Location, Logger, LogMessageNotification, LogMessageParams, MarkupKind, Message, MessageReader, MessageType, MessageWriter, NotificationHandler, NotificationHandler0, NotificationType, NotificationType0, Position, PrepareRenameRequest, ProgressToken, ProgressType, PublishDiagnosticsNotification, PublishDiagnosticsParams, Range, ReferenceOptions, ReferenceRegistrationOptions, ReferencesRequest, RegistrationParams, RegistrationRequest, RenameOptions, RenameParams, RenameRegistrationOptions, RenameRequest, RequestHandler, RequestHandler0, RequestType, RequestType0, ResourceOperationKind, ResponseError, SelectionRangeRequest, ServerCapabilities, ShowMessageNotification, ShowMessageParams, ShowMessageRequest, ShutdownRequest, SignatureHelp, SignatureHelpOptions, SignatureHelpRegistrationOptions, SignatureHelpRequest, StaticRegistrationOptions, SymbolInformation, SymbolKind, SymbolTag, TelemetryEventNotification, TextDocumentChangeRegistrationOptions, TextDocumentEdit, TextDocumentPositionParams, TextDocumentRegistrationOptions, TextDocumentSaveRegistrationOptions, TextDocumentSyncKind, TextDocumentSyncOptions, TextEdit, Trace, TraceFormat, TraceOptions, Tracer, TypeDefinitionRequest, UnregistrationParams, UnregistrationRequest, WatchKind, WillSaveTextDocumentNotification, WillSaveTextDocumentParams, WillSaveTextDocumentWaitUntilRequest, WorkDoneProgressOptions, WorkspaceEdit, WorkspaceFolder, WorkspaceSymbolRegistrationOptions, WorkspaceSymbolRequest, SignatureHelpContext, WorkDoneProgressBegin, WorkDoneProgressEnd, WorkDoneProgressReport, WorkDoneProgress, DefinitionLink, ProtocolRequestType0, ProtocolRequestType, MessageSignature, ProtocolNotificationType0, ProtocolNotificationType, RegistrationType, LSPErrorCodes, SaveOptions, CancellationStrategy, CallHierarchyPrepareRequest, SemanticTokensRegistrationType, CodeActionResolveRequest } from 'vscode-languageserver-protocol'
+import { ApplyWorkspaceEditParams, CompletionItemTag, ApplyWorkspaceEditRequest, ApplyWorkspaceEditResponse, CancellationToken, ClientCapabilities, CodeAction, CodeActionContext, CodeActionKind, CodeActionOptions, CodeActionParams, CodeActionRegistrationOptions, CodeActionRequest, CodeLens, CodeLensOptions, CodeLensRegistrationOptions, CodeLensRequest, CodeLensResolveRequest, Command, CompletionContext, CompletionItem, CompletionItemKind, CompletionList, CompletionOptions, CompletionRegistrationOptions, CompletionRequest, CompletionResolveRequest, createProtocolConnection, DeclarationRequest, Definition, DefinitionOptions, DefinitionRegistrationOptions, DefinitionRequest, Diagnostic, DiagnosticSeverity, DiagnosticTag, DidChangeConfigurationNotification, DidChangeConfigurationParams, DidChangeConfigurationRegistrationOptions, DidChangeTextDocumentNotification, DidChangeTextDocumentParams, DidChangeWatchedFilesNotification, DidChangeWatchedFilesParams, DidChangeWatchedFilesRegistrationOptions, DidCloseTextDocumentNotification, DidCloseTextDocumentParams, DidOpenTextDocumentNotification, DidOpenTextDocumentParams, DidSaveTextDocumentNotification, DidSaveTextDocumentParams, Disposable, DocumentColorRequest, DocumentFormattingOptions, DocumentFormattingParams, DocumentFormattingRequest, DocumentHighlight, DocumentHighlightOptions, DocumentHighlightRegistrationOptions, DocumentHighlightRequest, DocumentLink, DocumentLinkOptions, DocumentLinkRegistrationOptions, DocumentLinkRequest, DocumentLinkResolveRequest, DocumentOnTypeFormattingOptions, DocumentOnTypeFormattingParams, DocumentOnTypeFormattingRegistrationOptions, DocumentOnTypeFormattingRequest, DocumentRangeFormattingOptions, DocumentRangeFormattingParams, DocumentRangeFormattingRegistrationOptions, DocumentRangeFormattingRequest, DocumentSelector, DocumentSymbol, DocumentSymbolOptions, DocumentSymbolRegistrationOptions, DocumentSymbolRequest, Emitter, Event, ExecuteCommandParams, ExecuteCommandRegistrationOptions, ExecuteCommandRequest, ExitNotification, FailureHandlingKind, FileChangeType, FileEvent, FoldingRangeRequest, FormattingOptions, GenericNotificationHandler, GenericRequestHandler, Hover, HoverOptions, HoverRegistrationOptions, HoverRequest, ImplementationRequest, InitializedNotification, InitializeError, InitializeParams, InitializeRequest, InitializeResult, Location, Logger, LogMessageNotification, LogMessageParams, MarkupKind, Message, MessageReader, MessageType, MessageWriter, NotificationHandler, NotificationHandler0, NotificationType, NotificationType0, Position, PrepareRenameRequest, ProgressToken, ProgressType, PublishDiagnosticsNotification, PublishDiagnosticsParams, Range, ReferenceOptions, ReferenceRegistrationOptions, ReferencesRequest, RegistrationParams, RegistrationRequest, RenameOptions, RenameParams, RenameRegistrationOptions, RenameRequest, RequestHandler, RequestHandler0, RequestType, RequestType0, ResourceOperationKind, ResponseError, SelectionRangeRequest, ServerCapabilities, ShowMessageNotification, ShowMessageParams, ShowMessageRequest, ShutdownRequest, SignatureHelp, SignatureHelpOptions, SignatureHelpRegistrationOptions, SignatureHelpRequest, StaticRegistrationOptions, SymbolInformation, SymbolKind, SymbolTag, TelemetryEventNotification, TextDocumentChangeRegistrationOptions, TextDocumentEdit, TextDocumentPositionParams, TextDocumentRegistrationOptions, TextDocumentSaveRegistrationOptions, TextDocumentSyncKind, TextDocumentSyncOptions, TextEdit, Trace, TraceFormat, TraceOptions, Tracer, TypeDefinitionRequest, UnregistrationParams, UnregistrationRequest, WatchKind, WillSaveTextDocumentNotification, WillSaveTextDocumentParams, WillSaveTextDocumentWaitUntilRequest, WorkDoneProgressOptions, WorkspaceEdit, WorkspaceFolder, WorkspaceSymbolRegistrationOptions, WorkspaceSymbolRequest, SignatureHelpContext, WorkDoneProgressBegin, WorkDoneProgressEnd, WorkDoneProgressReport, WorkDoneProgress, DefinitionLink, ProtocolRequestType0, ProtocolRequestType, MessageSignature, ProtocolNotificationType0, ProtocolNotificationType, RegistrationType, LSPErrorCodes, SaveOptions, CancellationStrategy, CallHierarchyPrepareRequest, SemanticTokensRegistrationType, CodeActionResolveRequest, CodeLensRefreshRequest } from 'vscode-languageserver-protocol'
 import { TextDocument } from "vscode-languageserver-textdocument"
 import { URI } from 'vscode-uri'
 import commands from '../commands'
@@ -182,7 +182,7 @@ function createConnection(
         traceFormat: TraceFormat.Text
       }
 
-      if (sendNotificationOrTraceOptions === void 0) {
+      if (sendNotificationOrTraceOptions === undefined) {
         connection.trace(value, tracer, defaultTraceOptions)
       } else if (Is.boolean(sendNotificationOrTraceOptions)) {
         connection.trace(value, tracer, sendNotificationOrTraceOptions)
@@ -279,7 +279,7 @@ export interface ErrorHandler {
    * @param count - a count indicating how often an error is received. Will
    *  be reset if a message got successfully send or received.
    */
-  error(error: Error, message: Message, count: number): ErrorAction
+  error(error: Error, message: Message | undefined, count: number | undefined): ErrorAction
 
   /**
    * The connection to the server got closed.
@@ -288,9 +288,9 @@ export interface ErrorHandler {
 }
 
 class DefaultErrorHandler implements ErrorHandler {
-  private restarts: number[]
+  private readonly restarts: number[]
 
-  constructor(private name: string) {
+  constructor(private name: string, private maxRestartCount: number) {
     this.restarts = []
   }
 
@@ -834,7 +834,7 @@ const SupportedSymbolTags: SymbolTag[] = [
 ]
 
 function ensure<T, K extends keyof T>(target: T, key: K): T[K] {
-  if (target[key] == null) {
+  if (target[key] === undefined) {
     target[key] = {} as any
   }
   return target[key]
@@ -951,7 +951,7 @@ export interface NotificationFeature<T extends Function> {
   /**
    * Triggers the corresponding RPC method.
    */
-  getProvider(document: TextDocument): { send: T }
+  getProvider(document: TextDocument): { send: T } | undefined
 }
 
 namespace DynamicFeature {
@@ -1055,7 +1055,7 @@ abstract class DocumentNotifications<P, E>
     }
   }
 
-  public getProvider(document: TextDocument): { send: (data: E) => void } {
+  public getProvider(document: TextDocument): { send: (data: E) => void } | undefined {
     for (const selector of this._selectors.values()) {
       if (workspace.match(selector, document)) {
         return {
@@ -1065,7 +1065,7 @@ abstract class DocumentNotifications<P, E>
         }
       }
     }
-    throw new Error(`No provider available for the given text document`)
+    return undefined
   }
 }
 
@@ -1247,7 +1247,7 @@ class DidChangeTextDocumentFeature
     if (
       documentSelector &&
       textDocumentSyncOptions &&
-      textDocumentSyncOptions.change !== void 0 &&
+      textDocumentSyncOptions.change !== undefined &&
       textDocumentSyncOptions.change !== TextDocumentSyncKind.None
     ) {
       this.register({
@@ -1337,7 +1337,7 @@ class DidChangeTextDocumentFeature
     }
   }
 
-  public getProvider(document: TextDocument): { send: (event: DidChangeTextDocumentParams) => void } {
+  public getProvider(document: TextDocument): { send: (event: DidChangeTextDocumentParams) => void } | undefined {
     for (const changeData of this._changeData.values()) {
       if (workspace.match(changeData.documentSelector, document)) {
         return {
@@ -1347,7 +1347,7 @@ class DidChangeTextDocumentFeature
         }
       }
     }
-    throw new Error(`No provider available for the given text document`)
+    return undefined
   }
 }
 
@@ -1497,6 +1497,7 @@ class DidSaveTextDocumentFeature extends DocumentNotifications<
         ),
       DocumentNotifications.textDocumentFilter
     )
+    this._includeText = false
   }
 
   public get registrationType(): RegistrationType<TextDocumentSaveRegistrationOptions> {
@@ -1514,7 +1515,7 @@ class DidSaveTextDocumentFeature extends DocumentNotifications<
     capabilities: ServerCapabilities,
     documentSelector: DocumentSelector
   ): void {
-    let textDocumentSyncOptions = (capabilities as ResolvedTextDocumentSyncCapabilities).resolvedTextDocumentSync
+    const textDocumentSyncOptions = (capabilities as ResolvedTextDocumentSyncCapabilities).resolvedTextDocumentSync
     if (
       documentSelector &&
       textDocumentSyncOptions &&
@@ -1684,7 +1685,7 @@ export interface TextDocumentProviderFeature<T> {
   /**
    * Triggers the corresponding RPC method.
    */
-  getProvider(textDocument: TextDocument): T
+  getProvider(textDocument: TextDocument): T | undefined
 }
 
 export abstract class TextDocumentFeature<
@@ -1758,14 +1759,14 @@ export abstract class TextDocumentFeature<
     return (Is.boolean(capability) && capability === true ? { documentSelector } : Object.assign({}, capability, { documentSelector })) as RO & { documentSelector: DocumentSelector }
   }
 
-  public getProvider(textDocument: TextDocument): PR {
+  public getProvider(textDocument: TextDocument): PR | undefined {
     for (const registration of this._registrations.values()) {
       let selector = registration.data.registerOptions.documentSelector
       if (selector !== null && workspace.match(selector, textDocument) > 0) {
         return registration.provider
       }
     }
-    throw new Error(`The feature has no registration for the provided text document ${textDocument.uri.toString()}`)
+    return undefined
   }
 
   protected getAllProviders(): Iterable<PR> {
@@ -1778,12 +1779,12 @@ export abstract class TextDocumentFeature<
 }
 
 export interface WorkspaceProviderFeature<PR> {
-  getProviders(): PR[]
+  getProviders(): PR[] | undefined
 }
 
 interface WorkspaceFeatureRegistration<PR> {
-  disposable: Disposable;
-  provider: PR;
+  disposable: Disposable
+  provider: PR
 }
 
 abstract class WorkspaceFeature<RO, PR> implements DynamicFeature<RO> {
@@ -2437,8 +2438,8 @@ class CodeActionFeature extends TextDocumentFeature<boolean | CodeActionOptions,
       },
       resolveCodeAction: options.resolveProvider
         ? (item: CodeAction, token: CancellationToken) => {
-          const client = this._client;
-          const middleware = this._client.clientOptions.middleware!;
+          const client = this._client
+          const middleware = this._client.clientOptions.middleware!
           const resolveCodeAction: ResolveCodeActionSignature = (item, token) => {
             return client.sendRequest(CodeActionResolveRequest.type, item, token).then(
               (values) => values,
@@ -2446,11 +2447,11 @@ class CodeActionFeature extends TextDocumentFeature<boolean | CodeActionOptions,
                 client.logFailedRequest(CodeActionResolveRequest.type, error)
                 return Promise.resolve(item)
               }
-            );
-          };
+            )
+          }
           return middleware.resolveCodeAction
             ? middleware.resolveCodeAction(item, token, resolveCodeAction)
-            : resolveCodeAction(item, token);
+            : resolveCodeAction(item, token)
         }
         : undefined
     }
@@ -2888,7 +2889,7 @@ class ConfigurationFeature implements DynamicFeature<DidChangeConfigurationRegis
 
   public initialize(): void {
     let section = this._client.clientOptions.synchronize?.configurationSection
-    if (section !== void 0) {
+    if (section !== undefined) {
       this.register({
         id: UUID.generateUuid(),
         registerOptions: {
@@ -2909,7 +2910,7 @@ class ConfigurationFeature implements DynamicFeature<DidChangeConfigurationRegis
       if (Array.isArray(section) && !section.some(v => event.affectsConfiguration(v))) {
         return
       }
-      if (section != null) {
+      if (section != undefined) {
         this.onDidChangeConfiguration(data.registerOptions.section)
       }
     })
@@ -2918,7 +2919,7 @@ class ConfigurationFeature implements DynamicFeature<DidChangeConfigurationRegis
       let settings = this.getConfiguredSettings(section as string)
       if (!settings || Is.emptyObject(settings)) return
     }
-    if (section != null) {
+    if (section != undefined) {
       // Avoid server bug
       this.onDidChangeConfiguration(data.registerOptions.section)
     }
@@ -3264,7 +3265,7 @@ export abstract class BaseLanguageClient {
   public sendRequest<P, R, E>(type: RequestType<P, R, E>, params: P, token?: CancellationToken): Promise<R>
   public sendRequest<R>(method: string, token?: CancellationToken): Promise<R>
   public sendRequest<R>(method: string, param: any, token?: CancellationToken): Promise<R>
-  public async sendRequest<R>(type: string | MessageSignature, ...params: any[]): Promise<R> {
+  public sendRequest<R>(type: string | MessageSignature, ...params: any[]): Promise<R> {
     if (!this.isConnectionActive()) {
       throw new Error('Language client is not ready yet')
     }
@@ -3693,7 +3694,7 @@ export abstract class BaseLanguageClient {
             }
           }
         }
-      } else if (result.capabilities.textDocumentSync != null) {
+      } else if (result.capabilities.textDocumentSync != null && result.capabilities.textDocumentSync !== undefined) {
         textDocumentSyncOptions = result.capabilities.textDocumentSync as TextDocumentSyncOptions
       }
       this._capabilities = Object.assign({}, result.capabilities, {
@@ -3903,7 +3904,7 @@ export abstract class BaseLanguageClient {
   ): Promise<MessageTransports | null>
 
   private createConnection(): Promise<IConnection> {
-    let errorHandler = (error: Error, message: Message, count: number) => {
+    let errorHandler = (error: Error, message: Message | undefined, count: number | undefined) => {
       logger.error('connection error:', error, message)
       this.handleConnectionError(error, message, count)
     }
@@ -3940,7 +3941,7 @@ export abstract class BaseLanguageClient {
     let action = CloseAction.DoNotRestart
     if (this.state !== ClientState.Stopping) {
       try {
-        action = this._clientOptions.errorHandler!.closed();
+        action = this._clientOptions.errorHandler!.closed()
       } catch (error) {
         // Ignore errors coming from the error handler.
       }
@@ -4113,9 +4114,9 @@ export abstract class BaseLanguageClient {
   }
 
   private computeClientCapabilities(): ClientCapabilities {
-    let result: ClientCapabilities = {}
+    const result: ClientCapabilities = {}
     ensure(result, 'workspace')!.applyEdit = true
-    let workspaceEdit = ensure(ensure(result, 'workspace')!, 'workspaceEdit')
+    const workspaceEdit = ensure(ensure(result, 'workspace')!, 'workspaceEdit')!
     workspaceEdit.documentChanges = true
     workspaceEdit.resourceOperations = [ResourceOperationKind.Create, ResourceOperationKind.Rename, ResourceOperationKind.Delete]
     workspaceEdit.failureHandling = FailureHandlingKind.TextOnlyTransactional
@@ -4161,7 +4162,7 @@ export abstract class BaseLanguageClient {
   ): Promise<void> {
     if (this.clientOptions.disableDynamicRegister) return Promise.resolve()
     return new Promise<void>((resolve, reject) => {
-      for (let registration of params.registrations) {
+      for (const registration of params.registrations) {
         const feature = this._dynamicFeatures.get(registration.method)
         if (!feature) {
           reject(
