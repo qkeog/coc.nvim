@@ -2500,7 +2500,9 @@ class CodeLensFeature extends TextDocumentFeature<CodeLensOptions, CodeLensRegis
   protected registerLanguageProvider(
     options: CodeLensRegistrationOptions
   ): [Disposable, CodeLensProviderData] {
+    const emitter: Emitter<void> = new Emitter<void>()
     const provider: CodeLensProvider = {
+      onDidChangeCodeLenses: emitter.event,
       provideCodeLenses: (document, token) => {
         const client = this._client
         const provideCodeLenses: ProvideCodeLensesSignature = (document, token) => {
@@ -2537,7 +2539,7 @@ class CodeLensFeature extends TextDocumentFeature<CodeLensOptions, CodeLensRegis
         : undefined
     }
 
-    return [languages.registerCodeLensProvider(options.documentSelector, provider), { provider }]
+    return [languages.registerCodeLensProvider(options.documentSelector, provider), { provider, onDidChangeCodeLensEmitter: emitter }]
   }
 }
 
