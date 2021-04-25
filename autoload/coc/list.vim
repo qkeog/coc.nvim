@@ -258,11 +258,11 @@ function! coc#list#preview(lines, config) abort
     let change = position != 'tab' && get(a:config, 'splitRight', 0)
     let curr = win_getid()
     if change
-      if original && win_id2win(original)
-        noa call win_gotoid(original)
-      else
-        noa wincmd t
-      endif
+      " if original && win_id2win(original)
+      "   noa call win_gotoid(original)
+      " else
+      "   noa wincmd t
+      " endif
       execute 'noa belowright vert sb '.bufnr
       let winid = win_getid()
     elseif position == 'tab' || get(a:config, 'splitRight', 0)
